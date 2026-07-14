@@ -30,7 +30,7 @@ function Parents() {
 
           <h3>Groom's Family</h3>
 
-          <h4>Mr. Ashraf</h4>
+          <h4>Mr. Ashraf K.K</h4>
 
           <span>&</span>
 

@@ -8,7 +8,11 @@ function Footer() {
         ☾
       </div>
 
-      <h2>Fathima Amana & Shebin Ashraf</h2>
+      <h2 className={styles.names}>
+        <span>Amana</span>
+<span className={styles.and}>✦</span>
+        <span>Shebin</span>
+      </h2>
 
       <p className={styles.verse}>
         With love, gratitude and prayers,
