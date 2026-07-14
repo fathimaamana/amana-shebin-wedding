@@ -15,22 +15,18 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at center,
-      rgba(201, 162, 39, 0.08),
-      transparent 70%);
   z-index: 0;
+
   background-image:
     url("/images/decor/islamic-pattern.png"),
     radial-gradient(circle at center,
-        rgba(201,162,39,.08),
-        transparent 70%);
+      rgba(201,162,39,.08),
+      transparent 70%);
 
-    background-size:500px,cover;
+  background-size: 500px, cover;
+  background-repeat: repeat, no-repeat;
 
-    background-repeat:repeat,no-repeat;
-
-    opacity:.45;
+  opacity: .45;
 }
 
 .content {
@@ -47,7 +43,7 @@
 
 .crescent {
   font-size: 42px;
-  color: #c9a227;
+  color: #C9A227;
   margin-bottom: 25px;
 }
 
@@ -56,23 +52,23 @@
   font-weight: 600;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #8d6e63;
-  margin-bottom: 30px;
+  color: #8D6E63;
+  margin-bottom: 28px;
 }
 
 .name {
   font-family: "Great Vibes", cursive;
-  font-size: 96px;
+  font-size: 68px;
   font-weight: 400;
-  color: #2b2b2b;
-  line-height: 1;
-  text-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
+  color: #2B2B2B;
+  line-height: 1.08;
+  text-shadow: 0 4px 18px rgba(201,162,39,.15);
 }
 
 .heart {
   margin: 18px 0;
   font-size: 30px;
-  color: #c9a227;
+  color: #C9A227;
 }
 
 .invite {
@@ -86,14 +82,13 @@
 
   max-width: 650px;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .date {
   margin-top: 28px;
 
-  color: #8b6b3f;
+  color: #8B6B3F;
 
   font-size: 15px;
 
@@ -111,9 +106,9 @@
 
   background: transparent;
 
-  color: #2b2b2b;
+  color: #2B2B2B;
 
-  border: 2px solid #c9a227;
+  border: 2px solid #C9A227;
 
   border-radius: 40px;
 
@@ -123,80 +118,93 @@
 
   cursor: pointer;
 
-  transition: all 0.35s ease;
+  transition: .35s ease;
 }
 
 .button:hover {
-  background: #c9a227;
+  background: #C9A227;
   color: white;
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(201, 162, 39, 0.3);
-}
-
-@media (max-width: 768px) {
-  .content {
-    padding: 120px 24px 50px;
-  }
-
-  .crescent {
-    font-size: 34px;
-  }
-
-  .family {
-    font-size: 12px;
-    letter-spacing: 3px;
-  }
-
-  .name {
-    font-size: 62px;
-  }
-
-  .invite {
-    font-size: 16px;
-    line-height: 1.8;
-  }
-
-  .date {
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
-
-  .button {
-    width: 100%;
-    max-width: 280px;
-  }
+  box-shadow: 0 15px 35px rgba(201,162,39,.30);
 }
 
 .topFloral{
-    position:absolute;
-    top:0;
-    left:50%;
-    transform:translateX(-50%);
-    width:100%;
-    max-width:900px;
-    z-index:1;
-    pointer-events:none;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:900px;
+  z-index:1;
+  pointer-events:none;
 }
 
 .bottomFloral{
-    position:absolute;
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:900px;
+  z-index:1;
+  pointer-events:none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .content{
+    padding:90px 22px 25px;
+  }
+
+  .crescent{
+    font-size:30px;
+    margin-bottom:15px;
+  }
+
+  .family{
+    font-size:11px;
+    letter-spacing:2px;
+    margin-bottom:18px;
+  }
+
+  .name{
+    font-size:42px;
+    line-height:1.05;
+  }
+
+  .heart{
+    margin:12px 0;
+    font-size:22px;
+  }
+
+  .invite{
+    margin-top:18px;
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .date{
+    margin-top:18px;
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .button{
+    margin-top:28px;
     width:100%;
-    max-width:900px;
-    z-index:1;
-    pointer-events:none;
-}
+    max-width:250px;
+    padding:14px 28px;
+    font-size:15px;
+  }
 
-@media(max-width:768px){
+  .topFloral{
+    width:115%;
+  }
 
-.topFloral{
-    width:120%;
-}
-
-.bottomFloral{
-    width:120%;
-}
+  .bottomFloral{
+    width:115%;
+  }
 
 }

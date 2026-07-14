@@ -6,7 +6,7 @@ export const weddingData = {
 
   groom: {
     firstName: "Shebin",
-    fullName: "Shebin",
+    fullName: "Shebin Ashraf",
   },
 
   parents: {
@@ -26,21 +26,21 @@ export const weddingData = {
       date: "30 November 2025",
       title: "Our First Meeting",
       description:
-        "The day our paths crossed for the first time, beginning a beautiful journey together.",
+        "The beginning of a beautiful journey together.",
     },
 
     {
       date: "18 January 2026",
       title: "Engagement",
       description:
-        "Surrounded by our loved ones, we promised to spend our lives together.",
+        "A promise made before our families.",
     },
 
     {
       date: "5 September 2026",
       title: "Nikkah",
       description:
-        "With Allah's blessings, we begin our forever together.",
+        "Beginning our forever with Allah's blessings.",
     },
 
     {
@@ -54,7 +54,7 @@ export const weddingData = {
       date: "Forever",
       title: "In Sha Allah ❤️",
       description:
-        "A lifetime filled with love, mercy, faith, and beautiful memories.",
+        "A lifetime of love, mercy and blessings.",
     },
   ],
 
@@ -63,6 +63,7 @@ export const weddingData = {
     title: "Nikkah Ceremony",
     date: "2026-09-05T11:00:00",
     displayDate: "Saturday • 5 September 2026",
+    time: "12:00 PM onwards",
   },
 
   events: {

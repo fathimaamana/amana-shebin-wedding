@@ -1,42 +1,60 @@
 import styles from "./Events.module.css";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
 function Events() {
   return (
+    <ScrollReveal>
     <section className={styles.events} id="events">
 
-      <h2>Wedding Events</h2>
+      <p className={styles.subtitle}>
+        Our Celebration
+      </p>
 
-      <div className={styles.cards}>
+      <h2>
+        Nikkah Ceremony
+      </h2>
 
-        <div className={styles.card}>
+      <div className={styles.card}>
 
-          <h3>🕌 Nikkah</h3>
-
-          <p className={styles.date}>
-            Saturday • 5 September 2026
-          </p>
-
-          <p>
-            <strong>Time</strong><br />
-            11:00 AM
-          </p>
-
-          <p>
-            <strong>Venue</strong><br />
-            Hi-Land Convention Center
-          </p>
-
-          <span>
-            Parappanpoyil, Thamarassery
-          </span>
-
+        <div className={styles.crescent}>
+          ☾
         </div>
 
-        
+        <h3>
+          Saturday
+        </h3>
+
+        <p className={styles.date}>
+          5 September 2026
+        </p>
+
+        <div className={styles.divider}></div>
+
+        <div className={styles.info}>
+
+          <div>
+            <span>Time</span>
+            <h4>12:00 PM onwards</h4>
+          </div>
+
+          <div>
+            <span>Venue</span>
+            <h4>
+              Hi-Land Convention Center
+            </h4>
+
+            <p>
+              Parappanpoyil,
+              Thamarassery
+            </p>
+          </div>
+
+        </div>
 
       </div>
 
     </section>
+    </ScrollReveal>
   );
 }
 

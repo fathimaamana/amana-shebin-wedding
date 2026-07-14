@@ -1,23 +1,24 @@
 import styles from "./Story.module.css";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
 const timeline = [
   {
     date: "30 November 2025",
     title: "Our First Meeting",
     description:
-      "The day our paths crossed for the very first time, marking the beginning of a beautiful journey.",
+      "The beginning of a beautiful journey together.",
   },
   {
     date: "18 January 2026",
     title: "Engagement",
     description:
-      "A beautiful promise between two hearts, surrounded by the love and blessings of our families.",
+      "A promise made before our families.",
   },
   {
     date: "5 September 2026",
     title: "Nikkah",
     description:
-      "With gratitude to Allah, we begin our new life together through the sacred bond of marriage.",
+      "Beginning our forever with Allah's blessings.",
   },
   {
     date: "6 September 2026",
@@ -29,12 +30,13 @@ const timeline = [
     date: "Forever",
     title: "In Sha Allah ❤️",
     description:
-      "A lifetime of love, mercy, faith, and countless beautiful memories together.",
+      "A lifetime of love, mercy and blessings.",
   },
 ];
 
 function Story() {
   return (
+    <ScrollReveal>
     <section className={styles.story} id="story">
       <div className={styles.heading}>
         <h2>Our Story</h2>
@@ -58,6 +60,7 @@ function Story() {
         ))}
       </div>
     </section>
+    </ScrollReveal>
   );
 }
 

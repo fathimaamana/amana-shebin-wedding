@@ -1,8 +1,10 @@
 import styles from "./RSVP.module.css";
 import { FaWhatsapp, FaLocationDot } from "react-icons/fa6";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
 function RSVP() {
   return (
+    <ScrollReveal>
     <section className={styles.rsvp} id="rsvp">
 
       <div className={styles.card}>
@@ -21,8 +23,7 @@ function RSVP() {
         <div className={styles.buttons}>
 
           <a
-            href="https://wa.me/918089985626?text=Assalamu%20Alaikum%20Amana%20%26%20Shebin.%20I%20am%20happy%20to%20join%20your%20Nikkah%20In%20Sha%20Allah."
-            target="_blank"
+href="https://wa.me/918089985626?text=Hello%20Amana!%20I%20am%20delighted%20to%20accept%20your%20invitation%20and%20look%20forward%20to%20celebrating%20your%20Nikkah.%20See%20you%20on%205%20September!"target="_blank"
             rel="noreferrer"
             className={styles.whatsapp}
           >
@@ -48,6 +49,7 @@ function RSVP() {
 
       </div>
     </section>
+    </ScrollReveal>
   );
 }
 

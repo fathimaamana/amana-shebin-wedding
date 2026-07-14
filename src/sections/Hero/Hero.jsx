@@ -8,15 +8,12 @@ import InvitationModal from "../../components/InvitationModal/InvitationModal";
 
 import { weddingData } from "../../constants/weddingData";
 
-console.log("Wedding Data:", weddingData);
-console.log("Events:", weddingData.events);
-console.log("Wedding:", weddingData.wedding);
-
 function Hero() {
   const [openInvitation, setOpenInvitation] = useState(false);
 
   return (
     <section className={styles.hero} id="home">
+
       {/* Decorative Images */}
 
       <img
@@ -42,6 +39,7 @@ function Hero() {
       {/* Hero Content */}
 
       <div className={styles.content}>
+
         <div className={`${styles.crescent} hero-crescent`}>
           ☾
         </div>
@@ -50,17 +48,25 @@ function Hero() {
           Together with our families
         </p>
 
+        {/* Bride */}
+
         <h1 className={`${styles.name} hero-name`}>
-          {weddingData.bride.firstName}
+          {weddingData.bride.fullName}
         </h1>
+
+        {/* Heart */}
 
         <div className={`${styles.heart} hero-heart`}>
           ❤
         </div>
 
+        {/* Groom */}
+
         <h1 className={`${styles.name} hero-name`}>
-          {weddingData.groom.firstName}
+          {weddingData.groom.fullName}
         </h1>
+
+        {/* Invitation */}
 
         <p className={`${styles.invite} hero-invite`}>
           Request the honour of your presence
@@ -68,13 +74,21 @@ function Hero() {
           at our Nikkah Ceremony
         </p>
 
+        {/* Date */}
+
         <p className={`${styles.date} hero-date`}>
-         {weddingData.wedding.displayDate}
+          {weddingData.wedding.displayDate}
+          <br />
+          {weddingData.events.nikkah.time}
         </p>
+
+        {/* Countdown */}
 
         <div className="hero-countdown">
           <CountdownTimer />
         </div>
+
+        {/* Button */}
 
         <button
           className={`${styles.button} hero-button`}
@@ -82,14 +96,16 @@ function Hero() {
         >
           View Invitation
         </button>
+
       </div>
 
-      {/* Invitation Popup */}
+      {/* Invitation Modal */}
 
       <InvitationModal
         open={openInvitation}
         onClose={() => setOpenInvitation(false)}
       />
+
     </section>
   );
 }

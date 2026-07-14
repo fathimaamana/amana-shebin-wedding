@@ -1,7 +1,10 @@
 import styles from "./Couple.module.css";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
 function Couple() {
   return (
+    <ScrollReveal>
+
     <section className={styles.couple} id="couple">
 
       <p className={styles.subtitle}>
@@ -23,7 +26,7 @@ function Couple() {
             A
           </div>
 
-          <h3>Amana</h3>
+          <h3>Fathima Amana</h3>
 
           <span>Bride</span>
 
@@ -35,7 +38,7 @@ function Couple() {
             S
           </div>
 
-          <h3>Shebin</h3>
+          <h3>Shebin <br/>Ashraf</h3>
 
           <span>Groom</span>
 
@@ -44,6 +47,7 @@ function Couple() {
       </div>
 
     </section>
+    </ScrollReveal>
   );
 }
 

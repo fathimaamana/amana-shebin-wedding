@@ -3,14 +3,14 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:40px 20px;
+    padding:20px;
     background:
         radial-gradient(circle at top,#faf8f3,#f3eee7);
 }
 
 .card{
 
-    width:min(92%,620px);
+    width:min(92%,600px);
 
     background:rgba(255,255,255,.82);
 
@@ -20,18 +20,17 @@
 
     border-radius:34px;
 
-    padding:70px 50px;
+    padding:55px 40px;
 
     text-align:center;
 
-    box-shadow:
-    0 30px 80px rgba(0,0,0,.08);
+    box-shadow:0 30px 80px rgba(0,0,0,.08);
 
     position:relative;
 
     overflow:hidden;
 
-    animation:fadeUp 1s ease;
+    animation:fadeUp .9s ease;
 
 }
 
@@ -49,7 +48,8 @@ width:240px;
 
 height:240px;
 
-background:radial-gradient(circle,
+background:
+radial-gradient(circle,
 rgba(201,162,39,.12),
 transparent 70%);
 
@@ -69,7 +69,8 @@ width:240px;
 
 height:240px;
 
-background:radial-gradient(circle,
+background:
+radial-gradient(circle,
 rgba(201,162,39,.10),
 transparent 70%);
 
@@ -77,11 +78,11 @@ transparent 70%);
 
 .crescent{
 
-font-size:48px;
+font-size:46px;
 
 color:#C9A227;
 
-margin-bottom:25px;
+margin-bottom:18px;
 
 animation:float 4s ease-in-out infinite;
 
@@ -89,30 +90,31 @@ animation:float 4s ease-in-out infinite;
 
 .bismillah{
 
-font-size:32px;
+font-size:30px;
 
 font-family:"Amiri",serif;
 
 color:#2C2A29;
 
-margin-bottom:30px;
+margin-bottom:18px;
+
+line-height:1.5;
 
 }
 
 .divider{
 
-width:120px;
+width:90px;
 
 height:2px;
 
-margin:35px auto;
+margin:20px auto;
 
 background:linear-gradient(
 90deg,
 transparent,
 #C9A227,
-transparent
-);
+transparent);
 
 opacity:.6;
 
@@ -120,19 +122,15 @@ opacity:.6;
 
 .invited{
 
-margin-top:10px;
-
 font-size:18px;
 
-line-height:2;
+line-height:1.8;
 
 color:#6d6259;
 
 font-family:"Cormorant Garamond",serif;
 
 font-style:italic;
-
-letter-spacing:.5px;
 
 }
 
@@ -142,81 +140,35 @@ margin-top:12px;
 
 font-family:"Great Vibes",cursive;
 
-font-size:82px;
+font-size:74px;
 
 font-weight:400;
 
 color:#2C2A29;
 
-line-height:1;
+line-height:.95;
 
 }
 
 .and{
 
-margin:18px 0;
+margin:8px 0;
 
-font-size:42px;
-
-font-family:"Cormorant Garamond",serif;
+font-size:36px;
 
 color:#C9A227;
 
-font-weight:600;
-
-}
-
-.date{
-
-margin-top:35px;
-
-font-size:18px;
-
-line-height:1.9;
-
-color:#666;
-
-letter-spacing:1px;
-
-}
-
-
-.date strong{
-
-display:block;
-
-margin:8px 0;
-
-font-size:30px;
-
 font-family:"Cormorant Garamond",serif;
-
-color:#2C2A29;
 
 font-weight:600;
 
 }
-
-.venue{
-
-margin-top:18px;
-
-font-size:17px;
-
-line-height:1.8;
-
-color:#7c726a;
-
-font-family:"Cormorant Garamond",serif;
-
-}
-
 
 .button{
 
-margin-top:45px;
+margin-top:35px;
 
-padding:18px 50px;
+padding:16px 46px;
 
 background:transparent;
 
@@ -224,7 +176,7 @@ border:2px solid #C9A227;
 
 border-radius:50px;
 
-font-size:15px;
+font-size:14px;
 
 letter-spacing:2px;
 
@@ -272,7 +224,7 @@ from{
 
 opacity:0;
 
-transform:translateY(40px);
+transform:translateY(35px);
 
 }
 
@@ -288,27 +240,41 @@ transform:translateY(0);
 
 @media(max-width:768px){
 
+.container{
+
+padding:16px;
+
+}
+
 .card{
 
-padding:55px 28px;
+padding:40px 24px;
+
+border-radius:28px;
+
+}
+
+.crescent{
+
+font-size:36px;
+
+margin-bottom:12px;
 
 }
 
 .bismillah{
 
-font-size:24px;
+font-size:22px;
+
+margin-bottom:12px;
 
 }
 
-.name{
+.divider{
 
-font-size:56px;
+width:70px;
 
-}
-
-.and{
-
-font-size:30px;
+margin:16px auto;
 
 }
 
@@ -316,17 +282,21 @@ font-size:30px;
 
 font-size:15px;
 
-}
-
-.date{
-
-font-size:16px;
+line-height:1.6;
 
 }
 
-.date strong{
+.name{
 
-font-size:20px;
+font-size:58px;
+
+}
+
+.and{
+
+font-size:26px;
+
+margin:4px 0;
 
 }
 
@@ -334,26 +304,12 @@ font-size:20px;
 
 width:100%;
 
-padding:16px;
+margin-top:28px;
 
-font-size:14px;
+padding:14px;
+
+font-size:13px;
 
 }
-
-}
-
-.forever{
-
-margin-top:35px;
-
-font-size:19px;
-
-line-height:2;
-
-color:#555;
-
-font-family:"Cormorant Garamond",serif;
-
-font-style:italic;
 
 }

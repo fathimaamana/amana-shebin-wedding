@@ -8,36 +8,20 @@ function Footer() {
         ☾
       </div>
 
-      <h2>Amana & Shebin</h2>
+      <h2>Fathima Amana & Shebin Ashraf</h2>
 
       <p className={styles.verse}>
-        “He created for you spouses from among yourselves
-        so that you may find tranquility in them,
-        and He placed between you affection and mercy.”
+        With love, gratitude and prayers,
+        <br />
+        we look forward to celebrating with you.
       </p>
-
-      <span className={styles.reference}>
-        Qur'an 30:21
-      </span>
 
       <div className={styles.divider}></div>
-
-      <p className={styles.details}>
-        Saturday, 5 September 2026
-      </p>
-
-      <p className={styles.details}>
-        Hi-Land Convention Center
-      </p>
-
-      <p className={styles.details}>
-        Parappanpoyil, Thamarassery
-      </p>
 
       <h3>#AmanShNikkah</h3>
 
       <div className={styles.bottom}>
-        Made with ❤️ for our family & friends
+        05 • 09 • 2026
       </div>
 
     </footer>

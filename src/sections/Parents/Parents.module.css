@@ -38,41 +38,80 @@
 
 .card:hover{
   transform:translateY(-8px);
+  box-shadow:0 20px 45px rgba(201,162,39,.15);
 }
 
 .icon{
   font-size:34px;
-  margin-bottom:25px;
+  margin-bottom:22px;
+  color:#C9A227;
 }
 
 .card h3{
   color:#C9A227;
-  margin-bottom:25px;
-  font-size:28px;
+  margin-bottom:22px;
+  font-size:22px;
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+  letter-spacing:2px;
+  text-transform:uppercase;
 }
 
 .card h4{
-  margin:10px 0;
-  font-size:24px;
+  margin:10px 0 4px;
+  font-size:21px;
   color:#2C2A29;
-  font-weight:500;
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+  letter-spacing:.5px;
 }
 
 .card span{
   display:block;
-  margin:12px 0;
-  color:#8D6E63;
-  font-size:22px;
+  margin:4px 0;
+  color:#7A6653;
+  font-size:18px;
+  font-family:"Cormorant Garamond",serif;
+  font-style:italic;
+  letter-spacing:.5px;
 }
 
 @media(max-width:768px){
 
+.parents{
+  padding:90px 8%;
+}
+
 .parents h2{
-  font-size:42px;
+  font-size:40px;
+}
+
+.cards{
+  margin-top:45px;
+  gap:25px;
 }
 
 .card{
-  padding:35px;
+  padding:30px;
+}
+
+.icon{
+  font-size:28px;
+  margin-bottom:18px;
+}
+
+.card h3{
+  font-size:18px;
+  letter-spacing:1.5px;
+  margin-bottom:18px;
+}
+
+.card h4{
+  font-size:18px;
+}
+
+.card span{
+  font-size:16px;
 }
 
 }
