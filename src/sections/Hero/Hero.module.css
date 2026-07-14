@@ -1,0 +1,202 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(circle at top, rgba(201, 162, 39, 0.12), transparent 45%),
+    linear-gradient(135deg, #faf7f2 0%, #fffdf9 50%, #f8f3ec 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center,
+      rgba(201, 162, 39, 0.08),
+      transparent 70%);
+  z-index: 0;
+  background-image:
+    url("/images/decor/islamic-pattern.png"),
+    radial-gradient(circle at center,
+        rgba(201,162,39,.08),
+        transparent 70%);
+
+    background-size:500px,cover;
+
+    background-repeat:repeat,no-repeat;
+
+    opacity:.45;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+
+  padding: 140px 20px 60px;
+}
+
+.crescent {
+  font-size: 42px;
+  color: #c9a227;
+  margin-bottom: 25px;
+}
+
+.family {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8d6e63;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-family: "Great Vibes", cursive;
+  font-size: 96px;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 1;
+  text-shadow: 0 4px 18px rgba(201, 162, 39, 0.15);
+}
+
+.heart {
+  margin: 18px 0;
+  font-size: 30px;
+  color: #c9a227;
+}
+
+.invite {
+  margin-top: 35px;
+
+  color: #555;
+
+  font-size: 20px;
+
+  line-height: 1.9;
+
+  max-width: 650px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date {
+  margin-top: 28px;
+
+  color: #8b6b3f;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.button {
+  margin-top: 45px;
+
+  padding: 16px 46px;
+
+  background: transparent;
+
+  color: #2b2b2b;
+
+  border: 2px solid #c9a227;
+
+  border-radius: 40px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+.button:hover {
+  background: #c9a227;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(201, 162, 39, 0.3);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 120px 24px 50px;
+  }
+
+  .crescent {
+    font-size: 34px;
+  }
+
+  .family {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .name {
+    font-size: 62px;
+  }
+
+  .invite {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .date {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.topFloral{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:900px;
+    z-index:1;
+    pointer-events:none;
+}
+
+.bottomFloral{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:900px;
+    z-index:1;
+    pointer-events:none;
+}
+
+@media(max-width:768px){
+
+.topFloral{
+    width:120%;
+}
+
+.bottomFloral{
+    width:120%;
+}
+
+}

@@ -1,0 +1,131 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s ease;
+
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(201, 162, 39, 0.18);
+}
+
+.card h2 {
+  font-size: 42px;
+  font-family: "Cormorant Garamond", serif;
+  color: #C9A227;
+  margin: 0;
+  line-height: 1;
+}
+
+.card span {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .wrapper {
+    gap: 14px;
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card h2 {
+    font-size: 34px;
+  }
+
+  .card span {
+    font-size: 11px;
+  }
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .wrapper {
+    gap: 8px;
+    margin-top: 35px;
+    padding: 0 12px;
+  }
+
+  .card {
+    width: 72px;
+    height: 82px;
+    border-radius: 16px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card span {
+    margin-top: 6px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+}
+
+/* ========================= */
+/* Small Phones */
+/* ========================= */
+
+@media (max-width: 380px) {
+
+  .wrapper {
+    gap: 6px;
+  }
+
+  .card {
+    width: 66px;
+    height: 76px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card span {
+    font-size: 8px;
+  }
+
+}

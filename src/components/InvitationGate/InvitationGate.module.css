@@ -1,0 +1,359 @@
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+        radial-gradient(circle at top,#faf8f3,#f3eee7);
+}
+
+.card{
+
+    width:min(92%,620px);
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(201,162,39,.18);
+
+    border-radius:34px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.08);
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:fadeUp 1s ease;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-120px;
+
+left:-120px;
+
+width:240px;
+
+height:240px;
+
+background:radial-gradient(circle,
+rgba(201,162,39,.12),
+transparent 70%);
+
+}
+
+.card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-120px;
+
+right:-120px;
+
+width:240px;
+
+height:240px;
+
+background:radial-gradient(circle,
+rgba(201,162,39,.10),
+transparent 70%);
+
+}
+
+.crescent{
+
+font-size:48px;
+
+color:#C9A227;
+
+margin-bottom:25px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+.bismillah{
+
+font-size:32px;
+
+font-family:"Amiri",serif;
+
+color:#2C2A29;
+
+margin-bottom:30px;
+
+}
+
+.divider{
+
+width:120px;
+
+height:2px;
+
+margin:35px auto;
+
+background:linear-gradient(
+90deg,
+transparent,
+#C9A227,
+transparent
+);
+
+opacity:.6;
+
+}
+
+.invited{
+
+margin-top:10px;
+
+font-size:18px;
+
+line-height:2;
+
+color:#6d6259;
+
+font-family:"Cormorant Garamond",serif;
+
+font-style:italic;
+
+letter-spacing:.5px;
+
+}
+
+.name{
+
+margin-top:12px;
+
+font-family:"Great Vibes",cursive;
+
+font-size:82px;
+
+font-weight:400;
+
+color:#2C2A29;
+
+line-height:1;
+
+}
+
+.and{
+
+margin:18px 0;
+
+font-size:42px;
+
+font-family:"Cormorant Garamond",serif;
+
+color:#C9A227;
+
+font-weight:600;
+
+}
+
+.date{
+
+margin-top:35px;
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#666;
+
+letter-spacing:1px;
+
+}
+
+
+.date strong{
+
+display:block;
+
+margin:8px 0;
+
+font-size:30px;
+
+font-family:"Cormorant Garamond",serif;
+
+color:#2C2A29;
+
+font-weight:600;
+
+}
+
+.venue{
+
+margin-top:18px;
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#7c726a;
+
+font-family:"Cormorant Garamond",serif;
+
+}
+
+
+.button{
+
+margin-top:45px;
+
+padding:18px 50px;
+
+background:transparent;
+
+border:2px solid #C9A227;
+
+border-radius:50px;
+
+font-size:15px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+cursor:pointer;
+
+transition:.35s;
+
+color:#2C2A29;
+
+}
+
+.button:hover{
+
+background:#C9A227;
+
+color:white;
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 40px rgba(201,162,39,.30);
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+padding:55px 28px;
+
+}
+
+.bismillah{
+
+font-size:24px;
+
+}
+
+.name{
+
+font-size:56px;
+
+}
+
+.and{
+
+font-size:30px;
+
+}
+
+.invited{
+
+font-size:15px;
+
+}
+
+.date{
+
+font-size:16px;
+
+}
+
+.date strong{
+
+font-size:20px;
+
+}
+
+.button{
+
+width:100%;
+
+padding:16px;
+
+font-size:14px;
+
+}
+
+}
+
+.forever{
+
+margin-top:35px;
+
+font-size:19px;
+
+line-height:2;
+
+color:#555;
+
+font-family:"Cormorant Garamond",serif;
+
+font-style:italic;
+
+}

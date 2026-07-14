@@ -1,0 +1,94 @@
+.story {
+  padding: 120px 8%;
+  background: #fffdf9;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 54px;
+  color: #2c2a29;
+}
+
+.heading p {
+  margin-top: 15px;
+  color: #777;
+  font-size: 18px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c9a227;
+}
+
+.card {
+  position: relative;
+  margin-left: 70px;
+  margin-bottom: 55px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -54px;
+  top: 34px;
+  border-radius: 50%;
+  background: #c9a227;
+}
+
+.card span {
+  color: #8d6e63;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #2c2a29;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 14px;
+  }
+
+  .card {
+    margin-left: 45px;
+    padding: 24px;
+  }
+
+  .dot {
+    left: -36px;
+  }
+
+  .heading h2 {
+    font-size: 42px;
+  }
+}

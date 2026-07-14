@@ -1,0 +1,90 @@
+:root{
+
+/* ===========================
+   COLORS
+=========================== */
+
+--color-ivory:#FAF7F2;
+--color-white:#FFFFFF;
+
+--color-gold:#C9A227;
+
+--color-dark:#2C2A29;
+
+--color-brown:#8D6E63;
+
+--color-text:#555;
+
+--color-text-light:#777;
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+--font-heading:"Cormorant Garamond",serif;
+
+--font-script:"Great Vibes",cursive;
+
+--font-body:"Poppins",sans-serif;
+
+/* ===========================
+   FONT SIZES
+=========================== */
+
+--title-xl:72px;
+
+--title-lg:56px;
+
+--title-md:42px;
+
+--title-sm:30px;
+
+--text-lg:20px;
+
+--text-md:18px;
+
+--text-sm:15px;
+
+/* ===========================
+   SPACING
+=========================== */
+
+--section-padding:120px;
+
+--card-padding:50px;
+
+--gap-large:70px;
+
+--gap-medium:40px;
+
+--gap-small:20px;
+
+/* ===========================
+   BORDER RADIUS
+=========================== */
+
+--radius-xl:30px;
+
+--radius-lg:24px;
+
+--radius-md:18px;
+
+--radius-round:50%;
+
+/* ===========================
+   SHADOWS
+=========================== */
+
+--shadow-card:
+0 15px 35px rgba(0,0,0,.08);
+
+--shadow-large:
+0 30px 80px rgba(0,0,0,.12);
+
+/* ===========================
+   TRANSITIONS
+=========================== */
+
+--transition:.35s ease;
+
+}
